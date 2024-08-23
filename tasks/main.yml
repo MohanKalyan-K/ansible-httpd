@@ -1,0 +1,10 @@
+---
+# tasks
+- name: Install Nginx
+  shell: sudo yum install nginx -y
+- name: Start Nginx
+  service:
+    name: nginx
+    state: started
+    enabled: yes 
+
